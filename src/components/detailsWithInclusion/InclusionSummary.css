@@ -1,0 +1,125 @@
+.summary-sidebar {
+    width: 100%;
+}
+
+.summary-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f0f0f0;
+    position: sticky;
+    top: 40px;
+}
+
+.summary-title {
+    font-family: var(--font-playfair);
+    font-size: 1.4rem;
+    color: #2c2c2c;
+    margin: 0 0 5px 0;
+}
+
+.summary-subtitle {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #444;
+    font-weight: 600;
+}
+
+.tax-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.estimate-total-box {
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.estimate-total-box .label {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+.estimate-total-box .total-cost {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2c2c2c;
+}
+
+.continue-next-btn {
+    width: 100%;
+    padding: 18px;
+    background: #e8e34f;
+    color: #2c2c2c;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(232, 227, 79, 0.2);
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+
+.continue-next-btn:hover {
+    transform: translateY(-2px);
+    background: #d9d443;
+}
+
+.save-later-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #777;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.protection-alert {
+    display: flex;
+    gap: 12px;
+    background: #f0f7ff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e1effe;
+}
+
+.protection-alert p {
+    font-size: 0.75rem;
+    color: #3e5067;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.lock-icon {
+    font-size: 1.2rem;
+}

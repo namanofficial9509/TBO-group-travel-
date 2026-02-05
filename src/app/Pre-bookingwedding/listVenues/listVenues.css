@@ -1,0 +1,136 @@
+.list-venues-page {
+    background-color: #fcfbf7;
+    min-height: 100vh;
+}
+
+.venues-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+
+.venues-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.venues-title-section h1 {
+    font-family: var(--font-playfair);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c2c2c;
+    margin: 0 0 10px 0;
+}
+
+.venues-title-section p {
+    font-size: 1.1rem;
+    color: #888;
+    margin: 0;
+}
+
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.sort-dropdown span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.sort-dropdown select {
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.venues-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.venues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.page-num,
+.page-nav {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.page-num.active {
+    background-color: #f4d03f;
+    border-color: #f4d03f;
+    color: #2c2c2c;
+}
+
+.page-num:hover:not(.active),
+.page-nav:hover {
+    border-color: #f4d03f;
+    color: #2c2c2c;
+}
+
+.dots {
+    color: #999;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .venues-container {
+        padding: 30px;
+    }
+
+    .venues-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .venues-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .venues-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,184 @@
+.venue-filters {
+    width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.filter-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2c2c2c;
+    font-family: inherit;
+}
+
+.reset-btn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #f4d03f;
+    background: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.filter-subtitle {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 32px;
+}
+
+.filter-section {
+    margin-bottom: 32px;
+}
+
+.filter-section h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+/* Price Slider */
+.price-slider-container {
+    padding: 0 5px;
+}
+
+.price-slider {
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    outline: none;
+    appearance: none;
+    margin-bottom: 12px;
+}
+
+.price-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #f4d03f;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 500;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: #444;
+    cursor: pointer;
+}
+
+.checkbox-item input {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.checkbox-item input:checked+.checkmark {
+    background-color: #f4d03f;
+    border-color: #f4d03f;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-item input:checked+.checkmark:after {
+    display: block;
+}
+
+/* Capacity Grid */
+.capacity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.capacity-btn {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.85rem;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.capacity-btn.active {
+    border-color: #f4d03f;
+    background-color: rgba(244, 208, 63, 0.05);
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #f4d03f;
+    color: #2c2c2c;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(244, 208, 63, 0.2);
+    margin-top: 10px;
+}
+
+.apply-filters-btn:hover {
+    background-color: #e8b923;
+    transform: translateY(-2px);
+}

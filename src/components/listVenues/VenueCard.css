@@ -1,0 +1,184 @@
+.venue-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.venue-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.venue-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.venue-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    background-color: #f5f5f5;
+    /* Placeholder color before images are added */
+}
+
+.venue-card:hover .venue-image {
+    transform: scale(1.08);
+}
+
+.venue-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 12px;
+    background-color: #f4d03f;
+    color: #2c2c2c;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.wishlist-btn:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.venue-content {
+    padding: 24px;
+}
+
+.venue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.venue-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.venue-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #fff9e6;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.rating-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #d4a017;
+}
+
+.venue-location {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.venue-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+.venue-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.venue-price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.venue-price .label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #999;
+    letter-spacing: 0.5px;
+}
+
+.venue-price .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.venue-price .price small {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #666;
+}
+
+.view-details-btn {
+    padding: 12px 20px;
+    background-color: rgba(244, 208, 63, 0.1);
+    color: #d4a017;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #f4d03f;
+    color: #2c2c2c;
+}

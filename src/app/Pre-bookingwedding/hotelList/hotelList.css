@@ -1,0 +1,117 @@
+.hotel-page-container {
+    background: #fbfbfb;
+    min-height: 100vh;
+}
+
+.hotel-header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px 40px 80px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hotel-meta h1 {
+    font-family: var(--font-playfair);
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.location-pin {
+    font-size: 1rem;
+    color: #888;
+    margin: 0;
+}
+
+.change-hotel-btn {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.hotel-gallery-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    height: 500px;
+}
+
+.gallery-main img,
+.side-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.gallery-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-img {
+    height: calc(50% - 10px);
+    position: relative;
+}
+
+.more-photos .overlay-count {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.hotel-content-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+@media (max-width: 1200px) {
+
+    .hotel-header,
+    .hotel-content-layout {
+        padding: 40px 30px;
+    }
+
+    .hotel-gallery-grid {
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hotel-content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel-gallery-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .gallery-side {
+        display: none;
+    }
+}

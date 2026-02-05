@@ -1,0 +1,63 @@
+.allocation-section {
+    flex: 0.8;
+    background: #fff;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #f0f0f0;
+}
+
+.allocation-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alloc-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.counter-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.count-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-btn.active {
+    background: #2ecc71;
+    border-color: #2ecc71;
+    color: #fff;
+}
+
+.count-val {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #2c2c2c;
+}
+
+.capacity-note {
+    font-size: 0.8rem;
+    color: #888;
+    padding-top: 15px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.green {
+    color: #2ecc71;
+    font-weight: 700;
+}

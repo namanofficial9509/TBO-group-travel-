@@ -1,0 +1,144 @@
+.decor-section {
+    background: #fff;
+}
+
+.select-theme-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #999;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.theme-card {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.theme-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.theme-card:hover img {
+    transform: scale(1.05);
+}
+
+.theme-card.selected .theme-img-wrapper {
+    box-shadow: 0 0 0 4px #d4af37;
+}
+
+.popular-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #d4af37;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 8px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.selected-tick {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    background: #d4af37;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.theme-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0 0 4px 0;
+}
+
+.theme-tag {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+/* Event Specific Decor */
+.event-decor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.decor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fdfdfd;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+}
+
+.item-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-icon {
+    font-size: 1.5rem;
+}
+
+.item-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0 0 4px 0;
+}
+
+.item-desc {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+.customize-link {
+    background: transparent;
+    border: none;
+    color: #d4af37;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+}

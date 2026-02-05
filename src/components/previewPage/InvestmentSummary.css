@@ -1,0 +1,128 @@
+.investment-sidebar {
+    position: sticky;
+    top: 40px;
+}
+
+.investment-card-inner {
+    background: #fff;
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.s-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.s-row .s-val {
+    color: #1a1a1a;
+    font-weight: 800;
+}
+
+.tax-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #999;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.final-total-display {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.total-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gt-label {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #3498db;
+}
+
+.price-stack {
+    text-align: right;
+}
+
+.gt-val {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 950;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.inclusive-tag {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #bbb;
+    margin-top: 5px;
+    display: block;
+}
+
+.submit-booking-btn {
+    background: #11cbd7;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(17, 203, 215, 0.3);
+    transition: all 0.2s;
+}
+
+.submit-booking-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(17, 203, 215, 0.4);
+}
+
+.escrow-safe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.escrow-safe p {
+    font-size: 0.75rem;
+    color: #999;
+    margin: 0;
+    line-height: 1.3;
+}

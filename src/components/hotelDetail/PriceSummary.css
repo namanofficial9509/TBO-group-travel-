@@ -1,0 +1,132 @@
+.hotel-price-sidebar {
+    position: sticky;
+    top: 40px;
+}
+
+.price-card-inner {
+    background: #fff;
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.price-card-inner h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.price-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #f5f5f5;
+    margin-bottom: 25px;
+}
+
+.p-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.p-row .val {
+    color: #1a1a1a;
+    font-weight: 800;
+}
+
+.special-rate-box {
+    background: #f0f7ff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.sr-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #3498db;
+    margin-bottom: 12px;
+}
+
+.offer-input-wrap {
+    background: #fffef0;
+    border: 1px solid #eee1a0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+}
+
+.offer-input-wrap .curr {
+    font-weight: 800;
+    color: #888;
+    margin-right: 8px;
+}
+
+.offer-input-wrap input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.sr-note {
+    font-size: 0.65rem;
+    color: #999;
+    font-style: italic;
+    margin: 0;
+}
+
+.grand-total-box {
+    background: #f0f7ff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.gt-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.gt-val {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #1a1a1a;
+}
+
+.all-inc-tag {
+    font-size: 0.8rem;
+    color: #3498db;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+
+.booking-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.legal-note {
+    font-size: 0.7rem;
+    color: #999;
+    line-height: 1.4;
+    margin: 0;
+}

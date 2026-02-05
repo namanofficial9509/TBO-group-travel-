@@ -1,0 +1,45 @@
+.policies-section {
+    background: #f0f7ff;
+}
+
+.policy-main-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.policy-card {
+    display: flex;
+    gap: 15px;
+}
+
+.p-icon {
+    font-size: 1.2rem;
+}
+
+.p-content h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 5px 0;
+}
+
+.p-content p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 0 2px 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
+}
