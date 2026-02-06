@@ -37,8 +37,8 @@ export default function HostSidebar() {
                             key={link.name}
                             href={link.href}
                             className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 group ${isActive
-                                    ? "bg-slate-900 text-white shadow-lg shadow-slate-900/20"
-                                    : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
+                                ? "bg-slate-900 text-white shadow-lg shadow-slate-900/20"
+                                : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                                 }`}
                         >
                             <div className="flex items-center gap-3">

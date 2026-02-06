@@ -16,11 +16,11 @@ export default function LoginPage() {
         // Mock Authentication Logic
         setTimeout(() => {
             if (activeTab === 'guest') {
-                router.push("/microsite/1/guest"); // Redirect to demo guest microsite
+                router.push("/guest"); // Redirect to Guest Portal
             } else if (activeTab === 'planner') {
                 router.push("/dashboard");
             } else if (activeTab === 'host') {
-                router.push("/microsite/1/host"); // Redirect to demo host microsite
+                router.push("/host"); // Redirect to Host Dashboard Overview
             } else {
                 router.push("/vendor"); // Redirect to new Vendor Portal
             }
